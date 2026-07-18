@@ -1,0 +1,75 @@
+:root {
+  --bg: #f5f7fa;
+  --fg: #1b2430;
+  --muted: #6b7686;
+  --brand: #0b5fff;
+  --border: #d9dee6;
+  --card: #ffffff;
+  --danger: #b42318;
+  --success: #067647;
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); }
+a { color: var(--brand); }
+
+.shell { min-height: 100vh; display: flex; flex-direction: column; }
+.content { flex: 1; max-width: 960px; width: 100%; margin: 0 auto; padding: 24px 16px; }
+.footer { padding: 16px; text-align: center; color: var(--muted); font-size: 0.85rem; }
+
+.nav { display: flex; align-items: center; gap: 24px; padding: 12px 24px; background: #0e1b33; color: #fff; }
+.nav__brand { font-weight: 700; letter-spacing: 0.02em; }
+.nav__links { display: flex; gap: 16px; }
+.nav__link { color: #cfdcff; text-decoration: none; }
+.nav__link[aria-current='page'] { color: #fff; border-bottom: 2px solid #fff; }
+
+.form { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 20px; max-width: 480px; }
+.form__actions { display: flex; gap: 8px; }
+.field { margin-bottom: 14px; display: flex; flex-direction: column; gap: 4px; }
+.field__label { font-weight: 600; font-size: 0.9rem; }
+.field__hint { margin: 0; color: var(--muted); font-size: 0.8rem; }
+.field__error { margin: 0; color: var(--danger); font-size: 0.8rem; }
+.field--invalid .input { border-color: var(--danger); }
+
+.input { padding: 8px 10px; border: 1px solid var(--border); border-radius: 6px; font: inherit; background: #fff; }
+.input:disabled { background: #eef0f4; }
+
+.btn { display: inline-block; padding: 8px 14px; border-radius: 6px; border: 1px solid var(--border); background: #fff; cursor: pointer; font: inherit; text-decoration: none; color: var(--fg); }
+.btn--primary { background: var(--brand); border-color: var(--brand); color: #fff; }
+.btn--ghost { background: transparent; }
+.btn--small { padding: 4px 10px; font-size: 0.85rem; }
+.btn:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.banner { display: flex; justify-content: space-between; gap: 12px; padding: 12px 14px; border-radius: 6px; margin-bottom: 16px; }
+.banner--error { background: #fef3f2; border: 1px solid #fda29b; color: var(--danger); }
+.banner__detail { margin: 4px 0 0; font-size: 0.85rem; }
+.banner__actions { display: flex; gap: 8px; align-items: flex-start; }
+
+.badge { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 0.78rem; font-weight: 600; }
+.badge--neutral { background: #eaecf0; color: #344054; }
+.badge--info { background: #e0ecff; color: #0b3fa8; }
+.badge--success { background: #dcfae6; color: var(--success); }
+.badge--danger { background: #fee4e2; color: var(--danger); }
+
+.table { width: 100%; border-collapse: collapse; background: var(--card); border: 1px solid var(--border); }
+.table th, .table td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); }
+.table .num { text-align: right; font-variant-numeric: tabular-nums; }
+.table--compact th, .table--compact td { padding: 6px 10px; }
+
+.card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 16px; margin-bottom: 16px; }
+.card--highlight { border-color: var(--brand); box-shadow: 0 0 0 1px var(--brand); }
+.tag { margin-left: 8px; font-size: 0.72rem; background: var(--brand); color: #fff; padding: 2px 6px; border-radius: 4px; }
+.quotes { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-top: 16px; }
+.quote__total { font-size: 1.4rem; margin: 4px 0 12px; }
+
+.details { display: grid; grid-template-columns: 120px 1fr; gap: 8px 16px; }
+.details dt { color: var(--muted); }
+.details dd { margin: 0; }
+
+.toolbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+.empty { text-align: center; padding: 40px 16px; color: var(--muted); }
+.spinner { display: flex; align-items: center; gap: 8px; padding: 24px; color: var(--muted); }
+.spinner__dot { width: 12px; height: 12px; border-radius: 50%; background: var(--brand); animation: pulse 1s infinite alternate; }
+.muted { color: var(--muted); }
+@keyframes pulse { from { opacity: 0.3; } to { opacity: 1; } }
