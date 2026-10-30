@@ -1,0 +1,4 @@
+# Kit-owned skeleton (adlc init); teams may add language servers.
+project_name: "kestrel-web"
+language_servers: ["typescript"]
+encoding: "utf-8"

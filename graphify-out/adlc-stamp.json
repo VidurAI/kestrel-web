@@ -1,0 +1,11 @@
+{
+  "commit_sha": "7bcc08da8037a901f1cc96df87684728b5894633",
+  "generated_at": "2026-10-30T13:13:42+00:00",
+  "dirty": true,
+  "kit": "0.1.0",
+  "graphify": "0.9.97",
+  "nodes": 338,
+  "edges": 936,
+  "mode": "full",
+  "build_seconds": 1.3
+}
