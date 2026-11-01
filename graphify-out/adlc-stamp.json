@@ -1,8 +1,8 @@
 {
-  "commit_sha": "04df6672f7a1969362f553f00087b25f439106b7",
-  "generated_at": "2026-11-01T15:08:43+00:00",
+  "commit_sha": "9f8f1a9eb362356c379fab0bffc04674190931f1",
+  "generated_at": "2026-11-01T15:57:23+00:00",
   "dirty": false,
-  "kit": "0.1.4",
+  "kit": "0.1.5",
   "graphify": "0.9.97",
   "nodes": 338,
   "edges": 936,
